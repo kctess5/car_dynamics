@@ -1,0 +1,8 @@
+*.pyc
+*.mov
+*.mp4
+*.MP4
+raw_video/
+._*
+lens_corrected/
+camera_calibration/
