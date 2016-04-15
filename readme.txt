@@ -9,10 +9,15 @@ Notes:
 
 car_extraction.m is used to find the center point of the racecar for each frame, and visually estimate the heading of the car.
 
-useful info:
-	frame number
-	framerate
-	video file
-	tracking id
-	bbox
-	
+data_parsing.py is used to extract raw camera data from badly formatted Matlab log files and spit the result into yaml
+
+data_filtering.py is used to filter and combine the tracking and control data
+
+extract_control.py was used to extract raw control data from badly formatted Python log files into useful YAML
+
+time_align.m is a simple helper file to help lining up the video to the control data
+
+circle_fitting.py fits circles to the filtered path data
+fit_circle.py contains least squares optimization functions used in circle_fitting.py
+
+velocity_estimation.py is used to compute velocity from video tracking information
